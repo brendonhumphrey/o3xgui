@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "Experiements">
+      <FileRef
+         location = "group:experiments/Prefpane/o3xprefs/o3xprefs.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>
