@@ -36,7 +36,9 @@
     [zfsVersionString setStringValue:[O3X getZfsKextVersion]];
     [splVersionString setStringValue:[O3X getSplKextVersion]];
 
-    [resMemoryInUse setStringValue:[NSString stringWithFormat: @"%lu", [O3X getMemoryInUse]]];
+    NSByteCountFormatter *formatter = [[NSByteCountFormatter alloc] init];
+    
+    [resMemoryInUse setStringValue:[NSString stringWithFormat: @"%@", [formatter stringFromByteCount:[O3X getMemoryInUse]]]];
     [resThreadsInUse setStringValue:[NSString stringWithFormat: @"%lu", [O3X getThreadsInUse]]];
     [resMutexesInUse setStringValue:[NSString stringWithFormat: @"%lu", [O3X getMutexesInUse]]];
     [resRWLocksInUse setStringValue:[NSString stringWithFormat: @"%lu", [O3X getRwlocksInUse]]];
@@ -53,8 +55,8 @@
     [arcPmisPct setStringValue:[NSString stringWithFormat:@"%lu", as.pmisPctVal]];
     [arcMmis setStringValue:[NSString stringWithFormat:@"%lu", as.mmisVal]];
     [arcMmisPct setStringValue:[NSString stringWithFormat:@"%lu", as.mmisPctVal]];
-    [arcSize setStringValue:[NSString stringWithFormat:@"%lu", as.sizeVal]];
-    [arcTsize setStringValue:[NSString stringWithFormat:@"%lu", as.tsizeVal]];
+    [arcSize setStringValue:[NSString stringWithFormat:@"%@", [formatter stringFromByteCount:as.sizeVal]]];
+    [arcTsize setStringValue:[NSString stringWithFormat:@"%@", [formatter stringFromByteCount:as.tsizeVal]]];
 }
 
 - (IBAction)zfsIconClicked:(id)sender

@@ -190,7 +190,7 @@
                                                         </textFieldCell>
                                                     </textField>
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="elE-xa-Iey">
-                                                        <rect key="frame" x="66" y="43" width="50" height="17"/>
+                                                        <rect key="frame" x="66" y="43" width="64" height="17"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="size_val" id="hWX-sB-Vlc">
                                                             <font key="font" metaFont="system"/>
                                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -198,7 +198,7 @@
                                                         </textFieldCell>
                                                     </textField>
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pWs-i8-ZFg">
-                                                        <rect key="frame" x="66" y="18" width="55" height="17"/>
+                                                        <rect key="frame" x="66" y="18" width="64" height="17"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="tsize_val" id="YPn-e6-brd">
                                                             <font key="font" metaFont="system"/>
                                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
