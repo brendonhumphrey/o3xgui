@@ -7,6 +7,7 @@
 //
 
 #import <PreferencePanes/PreferencePanes.h>
+#import <SecurityInterface/SFAuthorizationView.h>
 
 @interface O3xPrefPane : NSPreferencePane
 {
@@ -38,9 +39,12 @@
     /* Periodic update of control panel */
     NSTimer *refreshTimer;
     
+    /* Security */
+    __weak IBOutlet SFAuthorizationView *authView;
 }
 
 - (void)mainViewDidLoad;
 - (void)updateStats;
+
 
 @end

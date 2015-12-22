@@ -20,6 +20,8 @@
                 <outlet property="arcRead" destination="gkw-mF-Fqj" id="hrM-Uh-oTS"/>
                 <outlet property="arcSize" destination="elE-xa-Iey" id="6BC-re-gNM"/>
                 <outlet property="arcTsize" destination="pWs-i8-ZFg" id="ckr-LU-qNc"/>
+                <outlet property="authView" destination="oPq-9D-lmB" id="xeh-RB-4iJ"/>
+                <outlet property="authorizationView" destination="oPq-9D-lmB" id="WNE-D7-cB0"/>
                 <outlet property="resMemoryInUse" destination="I17-Tm-XhB" id="ma4-uq-he1"/>
                 <outlet property="resMutexesInUse" destination="gtd-Rz-tVM" id="DZv-SI-ofP"/>
                 <outlet property="resRWLocksInUse" destination="8Vq-88-npv" id="Wz6-J3-pI0"/>
@@ -34,7 +36,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="176" y="715" width="668" height="368"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
             <view key="contentView" id="se5-gp-TjO">
                 <rect key="frame" x="0.0" y="0.0" width="668" height="368"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -46,57 +48,31 @@
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
+                        <connections>
+                            <action selector="zfsURLClicked:" target="-2" id="hD3-td-lFk"/>
+                        </connections>
                     </textField>
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A5y-Qc-RrF">
                         <rect key="frame" x="29" y="284" width="73" height="69"/>
                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="openzfs-hdd-blue" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="HMm-qg-gMT">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="zfsIconClicked:" target="-2" id="5g8-oy-DQq"/>
+                        </connections>
                     </button>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wpA-nf-3kP">
-                        <rect key="frame" x="9" y="40" width="29" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="ZFS:" id="tUI-69-lPr">
-                            <font key="font" metaFont="system" size="10"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nBy-Pz-wvd">
-                        <rect key="frame" x="34" y="40" width="89" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="zfs_version_text" id="8uf-08-OiN">
-                            <font key="font" metaFont="system" size="10"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mZw-DN-NdR">
-                        <rect key="frame" x="9" y="20" width="38" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="SPL:" id="9nZ-kZ-xJe">
-                            <font key="font" metaFont="system" size="10"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LHw-mg-g4o">
-                        <rect key="frame" x="34" y="20" width="89" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="spl_version_text" id="4Bw-JA-HI7">
-                            <font key="font" metaFont="system" size="10"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
                     <tabView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ehl-yL-o3E">
-                        <rect key="frame" x="127" y="13" width="528" height="349"/>
+                        <rect key="frame" x="127" y="54" width="528" height="308"/>
                         <font key="font" metaFont="system"/>
                         <tabViewItems>
                             <tabViewItem label="Performance" identifier="1" id="XD9-C3-6yD">
                                 <view key="view" ambiguous="YES" id="tmN-ZY-46H">
-                                    <rect key="frame" x="10" y="33" width="508" height="303"/>
+                                    <rect key="frame" x="10" y="33" width="508" height="262"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <box fixedFrame="YES" title="Arc Statistics" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="Vu3-vM-NBy">
-                                            <rect key="frame" x="229" y="117" width="265" height="183"/>
+                                            <rect key="frame" x="229" y="76" width="265" height="183"/>
                                             <view key="contentView" id="B9m-Mv-7yO">
                                                 <rect key="frame" x="1" y="1" width="263" height="167"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -282,15 +258,8 @@
                                             <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
                                             <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </box>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ILh-6M-LIZ">
-                                            <rect key="frame" x="356" y="10" width="141" height="32"/>
-                                            <buttonCell key="cell" type="push" title="Release Memory" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FVl-Hl-I5p">
-                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                        </button>
                                         <box fixedFrame="YES" title="Resources" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="T6k-Re-Q1p">
-                                            <rect key="frame" x="6" y="117" width="211" height="183"/>
+                                            <rect key="frame" x="6" y="76" width="211" height="183"/>
                                             <view key="contentView" id="HWc-en-7s4">
                                                 <rect key="frame" x="1" y="1" width="209" height="167"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -364,19 +333,26 @@
                                             <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
                                             <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </box>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ILh-6M-LIZ">
+                                            <rect key="frame" x="363" y="32" width="141" height="32"/>
+                                            <buttonCell key="cell" type="push" title="Release Memory" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FVl-Hl-I5p">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                        </button>
                                     </subviews>
                                 </view>
                             </tabViewItem>
                             <tabViewItem label="Authors" identifier="2" id="Rdd-0G-UD2">
                                 <view key="view" id="aAe-Xy-qPc">
-                                    <rect key="frame" x="10" y="33" width="508" height="303"/>
+                                    <rect key="frame" x="10" y="33" width="508" height="262"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lnl-tk-1jf">
-                                            <rect key="frame" x="-231" y="-14700" width="484" height="10000"/>
+                                            <rect key="frame" x="-231" y="-14741" width="484" height="10000"/>
                                             <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="VJT-LW-QoN">
                                                 <font key="font" metaFont="system"/>
-                                                <mutableString key="title">
+                                                <string key="title">
 OpenZFS on OS X consists of software that is covered under the
 Common Development and Distribution License 1.0 and the Apple
 Public Source License 2.0.
@@ -1204,19 +1180,19 @@ INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT OR NON-INFRINGEMENT.
 Please see the License for the specific language governing rights and
 limitations under the License."
-</mutableString>
+</string>
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
                                         <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ea-P9-UHq">
-                                            <rect key="frame" x="11" y="17" width="480" height="283"/>
+                                            <rect key="frame" x="11" y="-24" width="480" height="283"/>
                                             <clipView key="contentView" ambiguous="YES" id="jx1-lo-13b">
                                                 <rect key="frame" x="1" y="1" width="478" height="281"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textView ambiguous="YES" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="qor-P7-pMk">
-                                                        <rect key="frame" x="0.0" y="0.0" width="478" height="812"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="478" height="827"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <size key="minSize" width="478" height="281"/>
@@ -1230,46 +1206,7 @@ Jörgen Lundman is the principal developer of the OpenZFS on OS X port. He works
                                                                 <attributes>
                                                                     <font key="NSFont" size="12" name="ArialMT"/>
                                                                     <integer key="NSLigature" value="0"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                                        <tabStops>
-                                                                            <textTab alignment="left" location="28">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="56">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="84">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="112">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="140">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="168">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="196">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="224">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="252">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="280">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="308">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="336">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                        </tabStops>
-                                                                    </paragraphStyle>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                                 </attributes>
                                                             </fragment>
                                                             <fragment>
@@ -1380,46 +1317,7 @@ First and foremost the hard working ZFS developers at Sun/Oracle. They are respo
                                                                 <attributes>
                                                                     <font key="NSFont" size="12" name="ArialMT"/>
                                                                     <integer key="NSLigature" value="0"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                                        <tabStops>
-                                                                            <textTab alignment="left" location="28">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="56">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="84">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="112">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="140">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="168">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="196">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="224">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="252">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="280">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="308">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="336">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                        </tabStops>
-                                                                    </paragraphStyle>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                                 </attributes>
                                                             </fragment>
                                                             <fragment>
@@ -1680,46 +1578,7 @@ The OpenZFS on OS X port was made easier by the great work of ZFS on Linux, and 
                                                                 <attributes>
                                                                     <font key="NSFont" size="12" name="ArialMT"/>
                                                                     <integer key="NSLigature" value="0"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                                        <tabStops>
-                                                                            <textTab alignment="left" location="28">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="56">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="84">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="112">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="140">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="168">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="196">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="224">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="252">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="280">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="308">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="336">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                        </tabStops>
-                                                                    </paragraphStyle>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                                 </attributes>
                                                             </fragment>
                                                             <fragment>
@@ -1830,46 +1689,7 @@ Large parts come from the original work in MacZFS, and the excellent work of tho
                                                                 <attributes>
                                                                     <font key="NSFont" size="12" name="ArialMT"/>
                                                                     <integer key="NSLigature" value="0"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                                        <tabStops>
-                                                                            <textTab alignment="left" location="28">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="56">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="84">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="112">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="140">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="168">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="196">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="224">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="252">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="280">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="308">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="336">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                        </tabStops>
-                                                                    </paragraphStyle>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                                 </attributes>
                                                             </fragment>
                                                             <fragment>
@@ -1980,46 +1800,7 @@ VFS layer and glue comes from the FreeBSD project, who has done a excellent job 
                                                                 <attributes>
                                                                     <font key="NSFont" size="12" name="ArialMT"/>
                                                                     <integer key="NSLigature" value="0"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                                        <tabStops>
-                                                                            <textTab alignment="left" location="28">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="56">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="84">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="112">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="140">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="168">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="196">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="224">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="252">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="280">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="308">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="336">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                        </tabStops>
-                                                                    </paragraphStyle>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                                 </attributes>
                                                             </fragment>
                                                             <fragment>
@@ -2131,46 +1912,7 @@ willingly,
                                                                 <attributes>
                                                                     <font key="NSFont" size="12" name="ArialMT"/>
                                                                     <integer key="NSLigature" value="0"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                                        <tabStops>
-                                                                            <textTab alignment="left" location="28">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="56">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="84">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="112">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="140">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="168">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="196">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="224">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="252">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="280">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="308">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="336">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                        </tabStops>
-                                                                    </paragraphStyle>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                                 </attributes>
                                                             </fragment>
                                                             <fragment>
@@ -2684,46 +2426,7 @@ The flexible and welcoming attitude toward Open Source by GMO Internet, Tokyo, J
                                                                 <attributes>
                                                                     <font key="NSFont" size="12" name="ArialMT"/>
                                                                     <integer key="NSLigature" value="0"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                                        <tabStops>
-                                                                            <textTab alignment="left" location="28">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="56">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="84">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="112">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="140">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="168">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="196">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="224">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="252">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="280">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="308">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="336">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                        </tabStops>
-                                                                    </paragraphStyle>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                                 </attributes>
                                                             </fragment>
                                                             <fragment>
@@ -2834,46 +2537,7 @@ The book [OS X and iOS Kernel Programming] has been useful when working out the 
                                                                 <attributes>
                                                                     <font key="NSFont" size="12" name="ArialMT"/>
                                                                     <integer key="NSLigature" value="0"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                                        <tabStops>
-                                                                            <textTab alignment="left" location="28">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="56">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="84">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="112">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="140">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="168">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="196">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="224">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="252">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="280">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="308">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                            <textTab alignment="left" location="336">
-                                                                                <options/>
-                                                                            </textTab>
-                                                                        </tabStops>
-                                                                    </paragraphStyle>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                                 </attributes>
                                                             </fragment>
                                                             <fragment>
@@ -3098,20 +2762,19 @@ The book [OS X and iOS Kernel Programming] has been useful when working out the 
                             </tabViewItem>
                             <tabViewItem label="License" identifier="" id="4h7-E1-4Qv">
                                 <view key="view" id="lMQ-Gv-qjS">
-                                    <rect key="frame" x="10" y="33" width="508" height="303"/>
+                                    <rect key="frame" x="10" y="33" width="508" height="262"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vB9-EN-Lnh">
-                                            <rect key="frame" x="11" y="17" width="480" height="283"/>
+                                            <rect key="frame" x="11" y="-24" width="480" height="283"/>
                                             <clipView key="contentView" ambiguous="YES" id="57s-iY-9z2">
-                                                <rect key="frame" x="1" y="1" width="478" height="281"/>
+                                                <rect key="frame" x="1" y="1" width="0.0" height="0.0"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textView ambiguous="YES" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="s57-Qi-ZqO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="478" height="9996"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="9254"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <size key="minSize" width="478" height="281"/>
                                                         <size key="maxSize" width="483" height="10000000"/>
                                                         <attributedString key="textStorage">
                                                             <fragment>
@@ -3951,7 +3614,6 @@ limitations under the License."
                                                             </fragment>
                                                         </attributedString>
                                                         <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                        <size key="minSize" width="478" height="281"/>
                                                         <size key="maxSize" width="483" height="10000000"/>
                                                     </textView>
                                                 </subviews>
@@ -3962,7 +3624,7 @@ limitations under the License."
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                             <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="i7u-iG-WjZ">
-                                                <rect key="frame" x="463" y="1" width="16" height="281"/>
+                                                <rect key="frame" x="-15" y="1" width="16" height="0.0"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                         </scrollView>
@@ -3971,6 +3633,41 @@ limitations under the License."
                             </tabViewItem>
                         </tabViewItems>
                     </tabView>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oPq-9D-lmB" customClass="SFAuthorizationView">
+                        <rect key="frame" x="19" y="20" width="292" height="36"/>
+                    </customView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wpA-nf-3kP">
+                        <rect key="frame" x="18" y="84" width="29" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="ZFS:" id="tUI-69-lPr">
+                            <font key="font" metaFont="system" size="10"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nBy-Pz-wvd">
+                        <rect key="frame" x="43" y="84" width="89" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="zfs_version_text" id="8uf-08-OiN">
+                            <font key="font" metaFont="system" size="10"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mZw-DN-NdR">
+                        <rect key="frame" x="18" y="64" width="38" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="SPL:" id="9nZ-kZ-xJe">
+                            <font key="font" metaFont="system" size="10"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LHw-mg-g4o">
+                        <rect key="frame" x="43" y="64" width="89" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="spl_version_text" id="4Bw-JA-HI7">
+                            <font key="font" metaFont="system" size="10"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                 </subviews>
             </view>
             <connections>

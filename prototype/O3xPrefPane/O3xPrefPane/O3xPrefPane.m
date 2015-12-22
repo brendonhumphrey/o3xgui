@@ -16,8 +16,11 @@
 {
     [self updateStats];
     
-    [zfsVersionString setStringValue:@"ddddd"];
-    
+    AuthorizationItem items = {kAuthorizationRightExecute, 0, NULL, 0};
+    AuthorizationRights rights = {1, &items};
+    [authView setAuthorizationRights:&rights];
+    authView.delegate = self;
+    [authView updateStatus:nil];
     
     refreshTimer = [NSTimer timerWithTimeInterval:1.0
                             target:self
@@ -52,6 +55,11 @@
     [arcMmisPct setStringValue:[NSString stringWithFormat:@"%lu", as.mmisPctVal]];
     [arcSize setStringValue:[NSString stringWithFormat:@"%lu", as.sizeVal]];
     [arcTsize setStringValue:[NSString stringWithFormat:@"%lu", as.tsizeVal]];
+}
+
+- (IBAction)zfsIconClicked:(id)sender
+{
+      [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://www.openzfsonosx.org"]];
 }
 
 @end

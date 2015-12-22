@@ -15,6 +15,8 @@
 		B5DA0E7B1C2909BF00270E3A /* O3X.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DA0E791C2909BF00270E3A /* O3X.m */; };
 		B5DA0E7E1C2909CB00270E3A /* ArcStatSample.h in Headers */ = {isa = PBXBuildFile; fileRef = B5DA0E7C1C2909CB00270E3A /* ArcStatSample.h */; };
 		B5DA0E7F1C2909CB00270E3A /* ArcStatSample.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DA0E7D1C2909CB00270E3A /* ArcStatSample.m */; };
+		DA1240BC1C294D3900ABE141 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1240BB1C294D3900ABE141 /* Security.framework */; };
+		DA1240BE1C294D4700ABE141 /* SecurityInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1240BD1C294D4700ABE141 /* SecurityInterface.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		B5DA0E791C2909BF00270E3A /* O3X.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O3X.m; sourceTree = "<group>"; };
 		B5DA0E7C1C2909CB00270E3A /* ArcStatSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcStatSample.h; sourceTree = "<group>"; };
 		B5DA0E7D1C2909CB00270E3A /* ArcStatSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcStatSample.m; sourceTree = "<group>"; };
+		DA1240BB1C294D3900ABE141 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DA1240BD1C294D4700ABE141 /* SecurityInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityInterface.framework; path = System/Library/Frameworks/SecurityInterface.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA1240BE1C294D4700ABE141 /* SecurityInterface.framework in Frameworks */,
+				DA1240BC1C294D3900ABE141 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,8 @@
 		B5DA0E571C29034B00270E3A = {
 			isa = PBXGroup;
 			children = (
+				DA1240BD1C294D4700ABE141 /* SecurityInterface.framework */,
+				DA1240BB1C294D3900ABE141 /* Security.framework */,
 				B5DA0E631C29034B00270E3A /* O3xPrefPane */,
 				B5DA0E621C29034B00270E3A /* Products */,
 			);
@@ -306,6 +314,7 @@
 				B5DA0E721C29034C00270E3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
