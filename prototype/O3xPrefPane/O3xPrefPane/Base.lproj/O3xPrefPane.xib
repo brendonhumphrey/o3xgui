@@ -68,11 +68,11 @@
                         <tabViewItems>
                             <tabViewItem label="Performance" identifier="1" id="XD9-C3-6yD">
                                 <view key="view" ambiguous="YES" id="tmN-ZY-46H">
-                                    <rect key="frame" x="10" y="33" width="508" height="262"/>
+                                    <rect key="frame" x="10" y="33" width="193" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <box fixedFrame="YES" title="Arc Statistics" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="Vu3-vM-NBy">
-                                            <rect key="frame" x="229" y="76" width="265" height="183"/>
+                                            <rect key="frame" x="229" y="-186" width="265" height="183"/>
                                             <view key="contentView" id="B9m-Mv-7yO">
                                                 <rect key="frame" x="1" y="1" width="263" height="167"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -259,7 +259,7 @@
                                             <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </box>
                                         <box fixedFrame="YES" title="Resources" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="T6k-Re-Q1p">
-                                            <rect key="frame" x="6" y="76" width="211" height="183"/>
+                                            <rect key="frame" x="6" y="-186" width="211" height="183"/>
                                             <view key="contentView" id="HWc-en-7s4">
                                                 <rect key="frame" x="1" y="1" width="209" height="167"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -334,7 +334,7 @@
                                             <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </box>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ILh-6M-LIZ">
-                                            <rect key="frame" x="363" y="32" width="141" height="32"/>
+                                            <rect key="frame" x="363" y="-230" width="141" height="32"/>
                                             <buttonCell key="cell" type="push" title="Release Memory" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FVl-Hl-I5p">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
@@ -1188,14 +1188,13 @@ limitations under the License."
                                         <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ea-P9-UHq">
                                             <rect key="frame" x="11" y="-24" width="480" height="283"/>
                                             <clipView key="contentView" ambiguous="YES" id="jx1-lo-13b">
-                                                <rect key="frame" x="1" y="1" width="478" height="281"/>
+                                                <rect key="frame" x="1" y="1" width="0.0" height="0.0"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textView ambiguous="YES" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="qor-P7-pMk">
-                                                        <rect key="frame" x="0.0" y="0.0" width="478" height="827"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="434"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <size key="minSize" width="478" height="281"/>
                                                         <size key="maxSize" width="484" height="10000000"/>
                                                         <attributedString key="textStorage">
                                                             <fragment>
@@ -2742,7 +2741,6 @@ The book [OS X and iOS Kernel Programming] has been useful when working out the 
                                                             </fragment>
                                                         </attributedString>
                                                         <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                        <size key="minSize" width="478" height="281"/>
                                                         <size key="maxSize" width="484" height="10000000"/>
                                                     </textView>
                                                 </subviews>
@@ -2753,7 +2751,7 @@ The book [OS X and iOS Kernel Programming] has been useful when working out the 
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                             <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="g4z-Sn-BTN">
-                                                <rect key="frame" x="463" y="1" width="16" height="281"/>
+                                                <rect key="frame" x="-15" y="1" width="16" height="0.0"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                         </scrollView>

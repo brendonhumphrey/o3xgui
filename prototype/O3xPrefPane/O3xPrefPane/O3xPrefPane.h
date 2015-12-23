@@ -8,6 +8,7 @@
 
 #import <PreferencePanes/PreferencePanes.h>
 #import <SecurityInterface/SFAuthorizationView.h>
+#import "ArcStatSample.h"
 
 @interface O3xPrefPane : NSPreferencePane
 {
@@ -36,11 +37,15 @@
     __weak IBOutlet NSTextField *arcSize;
     __weak IBOutlet NSTextField *arcTsize;
     
+    /* Previous ARC Stats sample */
+    ArcStatSample *previousArcStatSample;
+    
     /* Periodic update of control panel */
     NSTimer *refreshTimer;
     
     /* Security */
     __weak IBOutlet SFAuthorizationView *authView;
+    
 }
 
 - (void)mainViewDidLoad;

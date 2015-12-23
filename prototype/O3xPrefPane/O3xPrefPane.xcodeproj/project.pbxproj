@@ -17,6 +17,8 @@
 		B5DA0E7F1C2909CB00270E3A /* ArcStatSample.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DA0E7D1C2909CB00270E3A /* ArcStatSample.m */; };
 		DA1240BC1C294D3900ABE141 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1240BB1C294D3900ABE141 /* Security.framework */; };
 		DA1240BE1C294D4700ABE141 /* SecurityInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1240BD1C294D4700ABE141 /* SecurityInterface.framework */; };
+		DA1240C11C2A443700ABE141 /* Sysctl.h in Headers */ = {isa = PBXBuildFile; fileRef = DA1240BF1C2A443700ABE141 /* Sysctl.h */; };
+		DA1240C21C2A443700ABE141 /* Sysctl.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1240C01C2A443700ABE141 /* Sysctl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		B5DA0E7D1C2909CB00270E3A /* ArcStatSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcStatSample.m; sourceTree = "<group>"; };
 		DA1240BB1C294D3900ABE141 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		DA1240BD1C294D4700ABE141 /* SecurityInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityInterface.framework; path = System/Library/Frameworks/SecurityInterface.framework; sourceTree = SDKROOT; };
+		DA1240BF1C2A443700ABE141 /* Sysctl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sysctl.h; sourceTree = "<group>"; };
+		DA1240C01C2A443700ABE141 /* Sysctl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sysctl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 				B5DA0E661C29034B00270E3A /* O3xPrefPane.m */,
 				B5DA0E6A1C29034C00270E3A /* O3xPrefPane.xib */,
 				B5DA0E6D1C29034C00270E3A /* Info.plist */,
+				DA1240BF1C2A443700ABE141 /* Sysctl.h */,
+				DA1240C01C2A443700ABE141 /* Sysctl.m */,
 			);
 			path = O3xPrefPane;
 			sourceTree = "<group>";
@@ -96,6 +102,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA1240C11C2A443700ABE141 /* Sysctl.h in Headers */,
 				B5DA0E651C29034B00270E3A /* O3xPrefPane.h in Headers */,
 				B5DA0E7E1C2909CB00270E3A /* ArcStatSample.h in Headers */,
 				B5DA0E7A1C2909BF00270E3A /* O3X.h in Headers */,
@@ -173,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5DA0E7B1C2909BF00270E3A /* O3X.m in Sources */,
+				DA1240C21C2A443700ABE141 /* Sysctl.m in Sources */,
 				B5DA0E7F1C2909CB00270E3A /* ArcStatSample.m in Sources */,
 				B5DA0E671C29034B00270E3A /* O3xPrefPane.m in Sources */,
 			);

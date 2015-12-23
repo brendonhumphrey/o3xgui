@@ -10,8 +10,25 @@
 
 @interface ArcStatSample : NSObject
 
-@property unsigned long readVal;
-@property unsigned long missVal;
+@property unsigned long read;
+@property unsigned long hits;
+@property unsigned long misses;
+@property unsigned long missPct;
+@property unsigned long dHit;
+@property unsigned long dMiss;
+@property unsigned long dMissPct;
+@property unsigned long pHit;
+@property unsigned long pMiss;
+@property unsigned long pMissPct;
+@property unsigned long mHit;
+@property unsigned long mMiss;
+@property unsigned long mMissPct;
+@property unsigned long size;
+@property unsigned long tSize;
+
+
+/*
+ @property unsigned long missVal;
 @property unsigned long missPctVal;
 @property unsigned long dmisVal;
 @property unsigned long dmisPctVal;
@@ -19,7 +36,12 @@
 @property unsigned long pmisPctVal;
 @property unsigned long mmisVal;
 @property unsigned long mmisPctVal;
-@property unsigned long sizeVal;
-@property unsigned long tsizeVal;
+*/
+
+-(id)init;
+-(id)initFromSysctl;
+
+-(ArcStatSample*)difference: (ArcStatSample*)older;
+-(void)calculatePercents;
 
 @end

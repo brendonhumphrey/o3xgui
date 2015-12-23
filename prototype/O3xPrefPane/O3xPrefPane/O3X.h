@@ -18,6 +18,4 @@
 +(NSString*)getZfsKextVersion;
 +(NSString*)getSplKextVersion;
 
-+(ArcStatSample*)getArcStatSample;
-
 @end

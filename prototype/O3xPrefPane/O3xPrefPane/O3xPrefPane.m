@@ -43,20 +43,28 @@
     [resMutexesInUse setStringValue:[NSString stringWithFormat: @"%lu", [O3X getMutexesInUse]]];
     [resRWLocksInUse setStringValue:[NSString stringWithFormat: @"%lu", [O3X getRwlocksInUse]]];
     
+    ArcStatSample *currentArcStatSample = [[ArcStatSample alloc] initFromSysctl];
     
-    ArcStatSample *as = [O3X getArcStatSample];
+    if (previousArcStatSample != NULL) {
     
-    [arcRead setStringValue:[NSString stringWithFormat:@"%lu", as.readVal]];
-    [arcMiss setStringValue:[NSString stringWithFormat:@"%lu", as.missVal]];
-    [arcMissPct setStringValue:[NSString stringWithFormat:@"%lu", as.missPctVal]];
-    [arcDmis setStringValue:[NSString stringWithFormat:@"%lu", as.dmisVal]];
-    [arcDmisPct setStringValue:[NSString stringWithFormat:@"%lu", as.dmisPctVal]];
-    [arcPmis setStringValue:[NSString stringWithFormat:@"%lu", as.pmisVal]];
-    [arcPmisPct setStringValue:[NSString stringWithFormat:@"%lu", as.pmisPctVal]];
-    [arcMmis setStringValue:[NSString stringWithFormat:@"%lu", as.mmisVal]];
-    [arcMmisPct setStringValue:[NSString stringWithFormat:@"%lu", as.mmisPctVal]];
-    [arcSize setStringValue:[NSString stringWithFormat:@"%@", [formatter stringFromByteCount:as.sizeVal]]];
-    [arcTsize setStringValue:[NSString stringWithFormat:@"%@", [formatter stringFromByteCount:as.tsizeVal]]];
+        ArcStatSample *diff = [currentArcStatSample difference:previousArcStatSample];
+        
+        [diff calculatePercents];
+        
+        [arcRead setStringValue:[NSString stringWithFormat:@"%lu", diff.read]];
+        [arcMiss setStringValue:[NSString stringWithFormat:@"%lu", diff.misses]];
+        [arcMissPct setStringValue:[NSString stringWithFormat:@"%lu", diff.missPct]];
+        [arcDmis setStringValue:[NSString stringWithFormat:@"%lu", diff.dMiss]];
+        [arcDmisPct setStringValue:[NSString stringWithFormat:@"%lu", diff.dMissPct]];
+        [arcPmis setStringValue:[NSString stringWithFormat:@"%lu", diff.pMiss]];
+        [arcPmisPct setStringValue:[NSString stringWithFormat:@"%lu", diff.pMissPct]];
+        [arcMmis setStringValue:[NSString stringWithFormat:@"%lu", diff.mMiss]];
+        [arcMmisPct setStringValue:[NSString stringWithFormat:@"%lu", diff.mMissPct]];
+        [arcSize setStringValue:[NSString stringWithFormat:@"%@", [formatter stringFromByteCount:currentArcStatSample.size]]];
+        [arcTsize setStringValue:[NSString stringWithFormat:@"%@", [formatter stringFromByteCount:currentArcStatSample.tSize]]];
+    }
+    
+    previousArcStatSample = currentArcStatSample;
 }
 
 - (IBAction)zfsIconClicked:(id)sender
