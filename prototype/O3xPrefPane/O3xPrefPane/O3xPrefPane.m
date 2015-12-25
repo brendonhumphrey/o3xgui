@@ -9,6 +9,7 @@
 #import "O3xPrefPane.h"
 #import "O3X.h"
 #import "ArcStatSample.h"
+#import "PerformanceDetails.h"
 
 @implementation O3xPrefPane
 
@@ -70,6 +71,17 @@
 - (IBAction)zfsIconClicked:(id)sender
 {
       [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://www.openzfsonosx.org"]];
+}
+
+- (IBAction) performanceDetailsClickAction:(id)sender
+{
+    if (!performanceDetails) {
+        performanceDetails = [[PerformanceDetails alloc] initWithWindowNibName:@"PerformanceDetails"];
+    }
+    
+    [arcTsize setStringValue:[NSString stringWithFormat:@"%@", @"xxxx"]];
+
+    [performanceDetails showWindow:self];
 }
 
 @end
