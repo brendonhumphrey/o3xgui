@@ -10,6 +10,7 @@
 
 @interface ArcStatSample : NSObject
 
+@property NSDate *date;
 @property unsigned long read;
 @property unsigned long hits;
 @property unsigned long misses;
@@ -25,18 +26,6 @@
 @property unsigned long mMissPct;
 @property unsigned long size;
 @property unsigned long tSize;
-
-
-/*
- @property unsigned long missVal;
-@property unsigned long missPctVal;
-@property unsigned long dmisVal;
-@property unsigned long dmisPctVal;
-@property unsigned long pmisVal;
-@property unsigned long pmisPctVal;
-@property unsigned long mmisVal;
-@property unsigned long mmisPctVal;
-*/
 
 -(id)init;
 -(id)initFromSysctl;

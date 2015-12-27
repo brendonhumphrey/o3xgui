@@ -13,7 +13,12 @@
 
 -(id)init
 {
-    return [super init];
+    self = [super init];
+    if (self) {
+        _date = [[NSDate alloc] init];
+    }
+    
+    return self;
 }
 
 -(id)initFromSysctl
@@ -21,6 +26,8 @@
     self = [super init];
     
     if (self) {
+        _date = [NSDate date];
+        
         _hits = [Sysctl ulongValue:@"kstat.zfs.misc.arcstats.hits"];
         
         _misses = [Sysctl ulongValue:@"kstat.zfs.misc.arcstats.misses"];

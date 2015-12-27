@@ -41,5 +41,35 @@
     return [Sysctl stringValue:@"spl.kext_version"];
 }
 
++(unsigned long)getArcCMax
+{
+    return [Sysctl ulongValue:@"kstat.zfs.misc.arcstats.c_max"];
+}
+
++(unsigned long)getArcCMin
+{
+    return [Sysctl ulongValue:@"kstat.zfs.misc.arcstats.c_min"];
+}
+
++(unsigned long)getArcMetaUsed
+{
+    return [Sysctl ulongValue:@"kstat.zfs.misc.arcstats.arc_meta_used"];
+}
+
++(unsigned long)getArcMetaMin
+{
+    return [Sysctl ulongValue:@"kstat.zfs.misc.arcstats.arc_meta_min"];
+}
+
++(unsigned long)getArcMetaMax
+{
+    return [Sysctl ulongValue:@"kstat.zfs.misc.arcstats.arc_meta_max"];
+}
+
++(unsigned long)getArcMemoryThrottleCount
+{
+    return [Sysctl ulongValue:@"kstat.zfs.misc.arcstats.memory_throttle_count"];
+}
+
 
 @end

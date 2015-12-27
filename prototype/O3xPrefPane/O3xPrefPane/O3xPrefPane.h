@@ -12,7 +12,7 @@
 @class ArcStatSample;
 @class PerformanceDetails;
 
-@interface O3xPrefPane : NSPreferencePane
+@interface O3xPrefPane : NSPreferencePane<NSTableViewDataSource, NSTableViewDelegate>
 {
     @private
     
@@ -27,26 +27,24 @@
     __weak IBOutlet NSTextField *resRWLocksInUse;
     
     /* ARC Statistics */
-    __weak IBOutlet NSTextField *arcRead;
-    __weak IBOutlet NSTextField *arcMiss;
-    __weak IBOutlet NSTextField *arcMissPct;
-    __weak IBOutlet NSTextField *arcDmis;
-    __weak IBOutlet NSTextField *arcDmisPct;
-    __weak IBOutlet NSTextField *arcPmis;
-    __weak IBOutlet NSTextField *arcPmisPct;
-    __weak IBOutlet NSTextField *arcMmis;
-    __weak IBOutlet NSTextField *arcMmisPct;
-    __weak IBOutlet NSTextField *arcSize;
-    __weak IBOutlet NSTextField *arcTsize;
+    __weak IBOutlet NSTableView *arcStatsTable;
+    __weak IBOutlet NSScrollView *arcStatsTableScrollView;
+    __weak IBOutlet NSTextField *arcStatArcCMax;
+    __weak IBOutlet NSTextField *arcStatArcCMin;
+    __weak IBOutlet NSTextField *arcStatThrottleCount;
+    __weak IBOutlet NSTextField *arcStatMetaMin;
+    __weak IBOutlet NSTextField *arcStatMetaMax;
+    __weak IBOutlet NSTextField *arcStatMetaUsed;
+    
+    /* Kstats Table */
+    __weak IBOutlet NSTableView *kstatTable;
     
     /* Security */
     __weak IBOutlet SFAuthorizationView *authView;
     
-    /* Performance Details window */
-    IBOutlet PerformanceDetails *performanceDetails;
-    
     /* Previous ARC Stats sample */
     ArcStatSample *previousArcStatSample;
+    NSMutableArray *arcStatsTableContent;
     
     /* Periodic update of control panel */
     NSTimer *refreshTimer;
@@ -54,7 +52,5 @@
 
 - (void)mainViewDidLoad;
 - (void)updateStats;
-
-- (IBAction) performanceDetailsClickAction:(id)sender;
 
 @end

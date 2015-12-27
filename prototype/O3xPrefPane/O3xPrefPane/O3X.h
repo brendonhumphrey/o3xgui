@@ -15,7 +15,14 @@
 +(unsigned long)getThreadsInUse;
 +(unsigned long)getMutexesInUse;
 +(unsigned long)getRwlocksInUse;
++(unsigned long)getArcCMax;
++(unsigned long)getArcCMin;
++(unsigned long)getArcMetaUsed;
++(unsigned long)getArcMetaMin;
++(unsigned long)getArcMetaMax;
++(unsigned long)getArcMemoryThrottleCount;
 +(NSString*)getZfsKextVersion;
 +(NSString*)getSplKextVersion;
 
 @end
+
