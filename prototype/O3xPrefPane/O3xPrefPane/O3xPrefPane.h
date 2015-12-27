@@ -12,7 +12,7 @@
 @class ArcStatSample;
 @class PerformanceDetails;
 
-@interface O3xPrefPane : NSPreferencePane<NSTableViewDataSource, NSTableViewDelegate>
+@interface O3xPrefPane : NSPreferencePane<NSTableViewDataSource, NSTableViewDelegate,NSSearchFieldDelegate>
 {
     @private
     
@@ -38,17 +38,26 @@
     
     /* Kstats Table */
     __weak IBOutlet NSTableView *kstatTable;
+    __weak IBOutlet NSSearchField *kstatSearchField;
+    __weak IBOutlet NSButton *kstatRefreshButton;
+    
+    /* Settings Table */
+    __weak IBOutlet NSTableView *settingsTable;
     
     /* Security */
     __weak IBOutlet SFAuthorizationView *authView;
     
-    /* Previous ARC Stats sample */
-    ArcStatSample *previousArcStatSample;
-    NSMutableArray *arcStatsTableContent;
-    
     /* Periodic update of control panel */
     NSTimer *refreshTimer;
 }
+
+@property NSMutableArray *arcStatsTableContent;
+@property ArcStatSample *previousArcStatSample;
+
+@property NSMutableArray *kstats;
+@property NSArray *filteredKstats;
+
+@property NSMutableArray *tunables;
 
 - (void)mainViewDidLoad;
 - (void)updateStats;
