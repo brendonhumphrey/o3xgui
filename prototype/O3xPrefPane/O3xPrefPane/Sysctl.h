@@ -10,6 +10,7 @@
 
 @interface Sysctl : NSObject
 
++(NSMutableArray*)getAllNames;
 +(NSString*)stringValue: (NSString*)name;
 +(unsigned long)ulongValue:(NSString*)name;
 
