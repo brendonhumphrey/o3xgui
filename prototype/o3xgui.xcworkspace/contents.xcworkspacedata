@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Plot/DatePlot.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:framework/CorePlot.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:kstatviewer/kstatviewer.xcodeproj">
    </FileRef>
    <FileRef

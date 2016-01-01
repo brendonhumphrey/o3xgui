@@ -1,0 +1,51 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8B3D884E5CB77CFCF2CE65E14C999AAC1DC843A5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "776F78DE931ACD7ABC8C8D92E1FB56D652BCF805" : 0,
+    "8B3D884E5CB77CFCF2CE65E14C999AAC1DC843A5" : 0,
+    "B516DFEF7FFB725EA85FA48825CEA3ED224BA08E" : 0,
+    "0557D189F039866F8FF83F96863DEB4DAEB508A1" : 0,
+    "53602EBD02F4C7EDA3BA2FD2900A3E0FB8746053" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1B09E546-2427-45EC-A924-2CE803EE7F51",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "776F78DE931ACD7ABC8C8D92E1FB56D652BCF805" : "spl\/",
+    "8B3D884E5CB77CFCF2CE65E14C999AAC1DC843A5" : "core-plot\/",
+    "B516DFEF7FFB725EA85FA48825CEA3ED224BA08E" : "o3xgui\/",
+    "0557D189F039866F8FF83F96863DEB4DAEB508A1" : "zfsadm-repo\/",
+    "53602EBD02F4C7EDA3BA2FD2900A3E0FB8746053" : "zfs\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DatePlot",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "examples\/DatePlot\/DatePlot.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/gist.github.com\/7713854.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0557D189F039866F8FF83F96863DEB4DAEB508A1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/openzfsonosx\/zfs",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "53602EBD02F4C7EDA3BA2FD2900A3E0FB8746053"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/openzfsonosx\/spl",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "776F78DE931ACD7ABC8C8D92E1FB56D652BCF805"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/core-plot\/core-plot.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8B3D884E5CB77CFCF2CE65E14C999AAC1DC843A5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/brendonhumphrey\/o3xgui.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B516DFEF7FFB725EA85FA48825CEA3ED224BA08E"
+    }
+  ]
+}
