@@ -12,7 +12,7 @@
 @class ArcStatSample;
 @class PerformanceDetails;
 
-@interface O3xPrefPane : NSPreferencePane<NSTableViewDataSource, NSTableViewDelegate,NSSearchFieldDelegate>
+@interface O3xPrefPane : NSPreferencePane<NSTableViewDataSource, NSTableViewDelegate>
 {
     @private
     
@@ -26,21 +26,6 @@
     __weak IBOutlet NSTextField *resMutexesInUse;
     __weak IBOutlet NSTextField *resRWLocksInUse;
     
-    /* ARC Statistics */
-    __weak IBOutlet NSTableView *arcStatsTable;
-    __weak IBOutlet NSScrollView *arcStatsTableScrollView;
-    __weak IBOutlet NSTextField *arcStatArcCMax;
-    __weak IBOutlet NSTextField *arcStatArcCMin;
-    __weak IBOutlet NSTextField *arcStatThrottleCount;
-    __weak IBOutlet NSTextField *arcStatMetaMin;
-    __weak IBOutlet NSTextField *arcStatMetaMax;
-    __weak IBOutlet NSTextField *arcStatMetaUsed;
-    
-    /* Kstats Table */
-    __weak IBOutlet NSTableView *kstatTable;
-    __weak IBOutlet NSSearchField *kstatSearchField;
-    __weak IBOutlet NSButton *kstatRefreshButton;
-    
     /* Settings Table */
     __weak IBOutlet NSTableView *settingsTable;
     
@@ -50,12 +35,6 @@
     /* Periodic update of control panel */
     NSTimer *refreshTimer;
 }
-
-@property NSMutableArray *arcStatsTableContent;
-@property ArcStatSample *previousArcStatSample;
-
-@property NSMutableArray *kstats;
-@property NSArray *filteredKstats;
 
 @property NSMutableArray *tunables;
 

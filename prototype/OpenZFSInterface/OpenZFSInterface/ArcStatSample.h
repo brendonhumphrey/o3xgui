@@ -28,7 +28,7 @@
 @property unsigned long tSize;
 
 -(id)init;
--(id)initFromSysctl;
++(ArcStatSample*)readFromSysctl;
 
 -(ArcStatSample*)difference: (ArcStatSample*)older;
 -(void)calculatePercents;

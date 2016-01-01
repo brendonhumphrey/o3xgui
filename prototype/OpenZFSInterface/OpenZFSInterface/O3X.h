@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <ArcStatSample.h>
 
 @interface O3X : NSObject
 

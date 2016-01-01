@@ -11,16 +11,11 @@
 		B5DA0E671C29034B00270E3A /* O3xPrefPane.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DA0E661C29034B00270E3A /* O3xPrefPane.m */; };
 		B5DA0E6C1C29034C00270E3A /* O3xPrefPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DA0E6A1C29034C00270E3A /* O3xPrefPane.xib */; };
 		B5DA0E771C2909B100270E3A /* openzfs-hdd-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = B5DA0E761C2909B100270E3A /* openzfs-hdd-blue.png */; };
-		B5DA0E7A1C2909BF00270E3A /* O3X.h in Headers */ = {isa = PBXBuildFile; fileRef = B5DA0E781C2909BF00270E3A /* O3X.h */; };
-		B5DA0E7B1C2909BF00270E3A /* O3X.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DA0E791C2909BF00270E3A /* O3X.m */; };
-		B5DA0E7E1C2909CB00270E3A /* ArcStatSample.h in Headers */ = {isa = PBXBuildFile; fileRef = B5DA0E7C1C2909CB00270E3A /* ArcStatSample.h */; };
-		B5DA0E7F1C2909CB00270E3A /* ArcStatSample.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DA0E7D1C2909CB00270E3A /* ArcStatSample.m */; };
 		DA1240BC1C294D3900ABE141 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1240BB1C294D3900ABE141 /* Security.framework */; };
 		DA1240BE1C294D4700ABE141 /* SecurityInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1240BD1C294D4700ABE141 /* SecurityInterface.framework */; };
-		DA1240C11C2A443700ABE141 /* Sysctl.h in Headers */ = {isa = PBXBuildFile; fileRef = DA1240BF1C2A443700ABE141 /* Sysctl.h */; };
-		DA1240C21C2A443700ABE141 /* Sysctl.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1240C01C2A443700ABE141 /* Sysctl.m */; };
 		DA4BAFD51C2FCF9000ABE141 /* Tunable.h in Headers */ = {isa = PBXBuildFile; fileRef = DA4BAFD31C2FCF9000ABE141 /* Tunable.h */; };
 		DA4BAFD61C2FCF9000ABE141 /* Tunable.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4BAFD41C2FCF9000ABE141 /* Tunable.m */; };
+		DABA261A1C35CEF500ABE141 /* OpenZFSInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABA26191C35CEF500ABE141 /* OpenZFSInterface.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -42,16 +37,11 @@
 		B5DA0E6B1C29034C00270E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/O3xPrefPane.xib; sourceTree = "<group>"; };
 		B5DA0E6D1C29034C00270E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5DA0E761C2909B100270E3A /* openzfs-hdd-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "openzfs-hdd-blue.png"; sourceTree = "<group>"; };
-		B5DA0E781C2909BF00270E3A /* O3X.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O3X.h; sourceTree = "<group>"; };
-		B5DA0E791C2909BF00270E3A /* O3X.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O3X.m; sourceTree = "<group>"; };
-		B5DA0E7C1C2909CB00270E3A /* ArcStatSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcStatSample.h; sourceTree = "<group>"; };
-		B5DA0E7D1C2909CB00270E3A /* ArcStatSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcStatSample.m; sourceTree = "<group>"; };
 		DA1240BB1C294D3900ABE141 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		DA1240BD1C294D4700ABE141 /* SecurityInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityInterface.framework; path = System/Library/Frameworks/SecurityInterface.framework; sourceTree = SDKROOT; };
-		DA1240BF1C2A443700ABE141 /* Sysctl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sysctl.h; sourceTree = "<group>"; };
-		DA1240C01C2A443700ABE141 /* Sysctl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sysctl.m; sourceTree = "<group>"; };
 		DA4BAFD31C2FCF9000ABE141 /* Tunable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tunable.h; sourceTree = "<group>"; };
 		DA4BAFD41C2FCF9000ABE141 /* Tunable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tunable.m; sourceTree = "<group>"; };
+		DABA26191C35CEF500ABE141 /* OpenZFSInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenZFSInterface.framework; path = "../../../../Library/Developer/Xcode/DerivedData/o3xgui-axvlugsqwsdnxtbgmjysacxfpadc/Build/Products/Debug/OpenZFSInterface.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +51,7 @@
 			files = (
 				DA1240BE1C294D4700ABE141 /* SecurityInterface.framework in Frameworks */,
 				DA1240BC1C294D3900ABE141 /* Security.framework in Frameworks */,
+				DABA261A1C35CEF500ABE141 /* OpenZFSInterface.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +61,7 @@
 		B5DA0E571C29034B00270E3A = {
 			isa = PBXGroup;
 			children = (
+				DABA26191C35CEF500ABE141 /* OpenZFSInterface.framework */,
 				DA1240BD1C294D4700ABE141 /* SecurityInterface.framework */,
 				DA1240BB1C294D3900ABE141 /* Security.framework */,
 				B5DA0E631C29034B00270E3A /* O3xPrefPane */,
@@ -88,17 +80,11 @@
 		B5DA0E631C29034B00270E3A /* O3xPrefPane */ = {
 			isa = PBXGroup;
 			children = (
-				B5DA0E7C1C2909CB00270E3A /* ArcStatSample.h */,
-				B5DA0E7D1C2909CB00270E3A /* ArcStatSample.m */,
-				B5DA0E781C2909BF00270E3A /* O3X.h */,
-				B5DA0E791C2909BF00270E3A /* O3X.m */,
 				B5DA0E731C29037900270E3A /* Resources */,
 				B5DA0E641C29034B00270E3A /* O3xPrefPane.h */,
 				B5DA0E661C29034B00270E3A /* O3xPrefPane.m */,
 				B5DA0E6A1C29034C00270E3A /* O3xPrefPane.xib */,
 				B5DA0E6D1C29034C00270E3A /* Info.plist */,
-				DA1240BF1C2A443700ABE141 /* Sysctl.h */,
-				DA1240C01C2A443700ABE141 /* Sysctl.m */,
 				DA4BAFD31C2FCF9000ABE141 /* Tunable.h */,
 				DA4BAFD41C2FCF9000ABE141 /* Tunable.m */,
 			);
@@ -120,11 +106,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA1240C11C2A443700ABE141 /* Sysctl.h in Headers */,
 				B5DA0E651C29034B00270E3A /* O3xPrefPane.h in Headers */,
 				DA4BAFD51C2FCF9000ABE141 /* Tunable.h in Headers */,
-				B5DA0E7E1C2909CB00270E3A /* ArcStatSample.h in Headers */,
-				B5DA0E7A1C2909BF00270E3A /* O3X.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,10 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5DA0E7B1C2909BF00270E3A /* O3X.m in Sources */,
-				DA1240C21C2A443700ABE141 /* Sysctl.m in Sources */,
 				DA4BAFD61C2FCF9000ABE141 /* Tunable.m in Sources */,
-				B5DA0E7F1C2909CB00270E3A /* ArcStatSample.m in Sources */,
 				B5DA0E671C29034B00270E3A /* O3xPrefPane.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

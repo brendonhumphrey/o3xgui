@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:kstatviewer/kstatviewer.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ArcStat/ArcStat.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:O3xPrefPane/O3xPrefPane.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:OpenZFSInterface/OpenZFSInterface.xcodeproj">
+   </FileRef>
+</Workspace>

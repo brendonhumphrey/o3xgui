@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DABA26631C361D4A00ABE141 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA26621C361D4A00ABE141 /* AppDelegate.swift */; };
+		DABA26651C361D4A00ABE141 /* KStatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA26641C361D4A00ABE141 /* KStatViewController.swift */; };
+		DABA26671C361D4A00ABE141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABA26661C361D4A00ABE141 /* Assets.xcassets */; };
+		DABA266A1C361D4A00ABE141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DABA26681C361D4A00ABE141 /* Main.storyboard */; };
+		DABA26751C361D4A00ABE141 /* kstatviewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA26741C361D4A00ABE141 /* kstatviewerTests.swift */; };
+		DABA26801C361D4A00ABE141 /* kstatviewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA267F1C361D4A00ABE141 /* kstatviewerUITests.swift */; };
+		DABA268E1C361DCC00ABE141 /* OpenZFSInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABA268D1C361DCC00ABE141 /* OpenZFSInterface.framework */; };
+		DABA268F1C361DCC00ABE141 /* OpenZFSInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DABA268D1C361DCC00ABE141 /* OpenZFSInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DABA26921C36387400ABE141 /* TmpKStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA26911C36387400ABE141 /* TmpKStat.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DABA26711C361D4A00ABE141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DABA26571C361D4A00ABE141 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DABA265E1C361D4A00ABE141;
+			remoteInfo = kstatviewer;
+		};
+		DABA267C1C361D4A00ABE141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DABA26571C361D4A00ABE141 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DABA265E1C361D4A00ABE141;
+			remoteInfo = kstatviewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DABA26901C361DCC00ABE141 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DABA268F1C361DCC00ABE141 /* OpenZFSInterface.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DABA265F1C361D4A00ABE141 /* kstatviewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kstatviewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABA26621C361D4A00ABE141 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DABA26641C361D4A00ABE141 /* KStatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KStatViewController.swift; sourceTree = "<group>"; };
+		DABA26661C361D4A00ABE141 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DABA26691C361D4A00ABE141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DABA266B1C361D4A00ABE141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DABA26701C361D4A00ABE141 /* kstatviewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kstatviewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABA26741C361D4A00ABE141 /* kstatviewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kstatviewerTests.swift; sourceTree = "<group>"; };
+		DABA26761C361D4A00ABE141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DABA267B1C361D4A00ABE141 /* kstatviewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kstatviewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABA267F1C361D4A00ABE141 /* kstatviewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kstatviewerUITests.swift; sourceTree = "<group>"; };
+		DABA26811C361D4A00ABE141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DABA268D1C361DCC00ABE141 /* OpenZFSInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = OpenZFSInterface.framework; path = "/Users/brendon/Library/Developer/Xcode/DerivedData/o3xgui-axvlugsqwsdnxtbgmjysacxfpadc/Build/Products/Debug/OpenZFSInterface.framework"; sourceTree = "<absolute>"; };
+		DABA26911C36387400ABE141 /* TmpKStat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TmpKStat.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DABA265C1C361D4A00ABE141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABA268E1C361DCC00ABE141 /* OpenZFSInterface.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABA266D1C361D4A00ABE141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABA26781C361D4A00ABE141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DABA26561C361D4A00ABE141 = {
+			isa = PBXGroup;
+			children = (
+				DABA268D1C361DCC00ABE141 /* OpenZFSInterface.framework */,
+				DABA26611C361D4A00ABE141 /* kstatviewer */,
+				DABA26731C361D4A00ABE141 /* kstatviewerTests */,
+				DABA267E1C361D4A00ABE141 /* kstatviewerUITests */,
+				DABA26601C361D4A00ABE141 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DABA26601C361D4A00ABE141 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DABA265F1C361D4A00ABE141 /* kstatviewer.app */,
+				DABA26701C361D4A00ABE141 /* kstatviewerTests.xctest */,
+				DABA267B1C361D4A00ABE141 /* kstatviewerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DABA26611C361D4A00ABE141 /* kstatviewer */ = {
+			isa = PBXGroup;
+			children = (
+				DABA26621C361D4A00ABE141 /* AppDelegate.swift */,
+				DABA26641C361D4A00ABE141 /* KStatViewController.swift */,
+				DABA26661C361D4A00ABE141 /* Assets.xcassets */,
+				DABA26681C361D4A00ABE141 /* Main.storyboard */,
+				DABA266B1C361D4A00ABE141 /* Info.plist */,
+				DABA26911C36387400ABE141 /* TmpKStat.swift */,
+			);
+			path = kstatviewer;
+			sourceTree = "<group>";
+		};
+		DABA26731C361D4A00ABE141 /* kstatviewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				DABA26741C361D4A00ABE141 /* kstatviewerTests.swift */,
+				DABA26761C361D4A00ABE141 /* Info.plist */,
+			);
+			path = kstatviewerTests;
+			sourceTree = "<group>";
+		};
+		DABA267E1C361D4A00ABE141 /* kstatviewerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DABA267F1C361D4A00ABE141 /* kstatviewerUITests.swift */,
+				DABA26811C361D4A00ABE141 /* Info.plist */,
+			);
+			path = kstatviewerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DABA265E1C361D4A00ABE141 /* kstatviewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DABA26841C361D4A00ABE141 /* Build configuration list for PBXNativeTarget "kstatviewer" */;
+			buildPhases = (
+				DABA265B1C361D4A00ABE141 /* Sources */,
+				DABA265C1C361D4A00ABE141 /* Frameworks */,
+				DABA265D1C361D4A00ABE141 /* Resources */,
+				DABA26901C361DCC00ABE141 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kstatviewer;
+			productName = kstatviewer;
+			productReference = DABA265F1C361D4A00ABE141 /* kstatviewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DABA266F1C361D4A00ABE141 /* kstatviewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DABA26871C361D4A00ABE141 /* Build configuration list for PBXNativeTarget "kstatviewerTests" */;
+			buildPhases = (
+				DABA266C1C361D4A00ABE141 /* Sources */,
+				DABA266D1C361D4A00ABE141 /* Frameworks */,
+				DABA266E1C361D4A00ABE141 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DABA26721C361D4A00ABE141 /* PBXTargetDependency */,
+			);
+			name = kstatviewerTests;
+			productName = kstatviewerTests;
+			productReference = DABA26701C361D4A00ABE141 /* kstatviewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DABA267A1C361D4A00ABE141 /* kstatviewerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DABA268A1C361D4A00ABE141 /* Build configuration list for PBXNativeTarget "kstatviewerUITests" */;
+			buildPhases = (
+				DABA26771C361D4A00ABE141 /* Sources */,
+				DABA26781C361D4A00ABE141 /* Frameworks */,
+				DABA26791C361D4A00ABE141 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DABA267D1C361D4A00ABE141 /* PBXTargetDependency */,
+			);
+			name = kstatviewerUITests;
+			productName = kstatviewerUITests;
+			productReference = DABA267B1C361D4A00ABE141 /* kstatviewerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DABA26571C361D4A00ABE141 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = brendon;
+				TargetAttributes = {
+					DABA265E1C361D4A00ABE141 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					DABA266F1C361D4A00ABE141 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = DABA265E1C361D4A00ABE141;
+					};
+					DABA267A1C361D4A00ABE141 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = DABA265E1C361D4A00ABE141;
+					};
+				};
+			};
+			buildConfigurationList = DABA265A1C361D4A00ABE141 /* Build configuration list for PBXProject "kstatviewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DABA26561C361D4A00ABE141;
+			productRefGroup = DABA26601C361D4A00ABE141 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DABA265E1C361D4A00ABE141 /* kstatviewer */,
+				DABA266F1C361D4A00ABE141 /* kstatviewerTests */,
+				DABA267A1C361D4A00ABE141 /* kstatviewerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DABA265D1C361D4A00ABE141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABA26671C361D4A00ABE141 /* Assets.xcassets in Resources */,
+				DABA266A1C361D4A00ABE141 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABA266E1C361D4A00ABE141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABA26791C361D4A00ABE141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DABA265B1C361D4A00ABE141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABA26651C361D4A00ABE141 /* KStatViewController.swift in Sources */,
+				DABA26921C36387400ABE141 /* TmpKStat.swift in Sources */,
+				DABA26631C361D4A00ABE141 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABA266C1C361D4A00ABE141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABA26751C361D4A00ABE141 /* kstatviewerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABA26771C361D4A00ABE141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABA26801C361D4A00ABE141 /* kstatviewerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DABA26721C361D4A00ABE141 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DABA265E1C361D4A00ABE141 /* kstatviewer */;
+			targetProxy = DABA26711C361D4A00ABE141 /* PBXContainerItemProxy */;
+		};
+		DABA267D1C361D4A00ABE141 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DABA265E1C361D4A00ABE141 /* kstatviewer */;
+			targetProxy = DABA267C1C361D4A00ABE141 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DABA26681C361D4A00ABE141 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DABA26691C361D4A00ABE141 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DABA26821C361D4A00ABE141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DABA26831C361D4A00ABE141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DABA26851C361D4A00ABE141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = kstatviewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.lundman.net.kstatviewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DABA26861C361D4A00ABE141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = kstatviewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.lundman.net.kstatviewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DABA26881C361D4A00ABE141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = kstatviewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.lundman.net.kstatviewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kstatviewer.app/Contents/MacOS/kstatviewer";
+			};
+			name = Debug;
+		};
+		DABA26891C361D4A00ABE141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = kstatviewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.lundman.net.kstatviewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kstatviewer.app/Contents/MacOS/kstatviewer";
+			};
+			name = Release;
+		};
+		DABA268B1C361D4A00ABE141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = kstatviewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.lundman.net.kstatviewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = kstatviewer;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DABA268C1C361D4A00ABE141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = kstatviewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.lundman.net.kstatviewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = kstatviewer;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DABA265A1C361D4A00ABE141 /* Build configuration list for PBXProject "kstatviewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DABA26821C361D4A00ABE141 /* Debug */,
+				DABA26831C361D4A00ABE141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DABA26841C361D4A00ABE141 /* Build configuration list for PBXNativeTarget "kstatviewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DABA26851C361D4A00ABE141 /* Debug */,
+				DABA26861C361D4A00ABE141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DABA26871C361D4A00ABE141 /* Build configuration list for PBXNativeTarget "kstatviewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DABA26881C361D4A00ABE141 /* Debug */,
+				DABA26891C361D4A00ABE141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DABA268A1C361D4A00ABE141 /* Build configuration list for PBXNativeTarget "kstatviewerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DABA268B1C361D4A00ABE141 /* Debug */,
+				DABA268C1C361D4A00ABE141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DABA26571C361D4A00ABE141 /* Project object */;
+}

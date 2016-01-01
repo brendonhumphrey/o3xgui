@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DABA26281C35D19900ABE141 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA26271C35D19900ABE141 /* AppDelegate.swift */; };
+		DABA262A1C35D19900ABE141 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA26291C35D19900ABE141 /* ViewController.swift */; };
+		DABA262C1C35D19900ABE141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABA262B1C35D19900ABE141 /* Assets.xcassets */; };
+		DABA262F1C35D19900ABE141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DABA262D1C35D19900ABE141 /* Main.storyboard */; };
+		DABA263A1C35D19900ABE141 /* ArcStatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA26391C35D19900ABE141 /* ArcStatTests.swift */; };
+		DABA26451C35D19900ABE141 /* ArcStatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA26441C35D19900ABE141 /* ArcStatUITests.swift */; };
+		DABA26531C35D1BD00ABE141 /* OpenZFSInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABA26521C35D1BD00ABE141 /* OpenZFSInterface.framework */; };
+		DABA26541C35D1BD00ABE141 /* OpenZFSInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DABA26521C35D1BD00ABE141 /* OpenZFSInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DABA26361C35D19900ABE141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DABA261C1C35D19900ABE141 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DABA26231C35D19900ABE141;
+			remoteInfo = ArcStat;
+		};
+		DABA26411C35D19900ABE141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DABA261C1C35D19900ABE141 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DABA26231C35D19900ABE141;
+			remoteInfo = ArcStat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DABA26551C35D1BD00ABE141 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DABA26541C35D1BD00ABE141 /* OpenZFSInterface.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DABA26241C35D19900ABE141 /* ArcStat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArcStat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABA26271C35D19900ABE141 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DABA26291C35D19900ABE141 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DABA262B1C35D19900ABE141 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DABA262E1C35D19900ABE141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DABA26301C35D19900ABE141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DABA26351C35D19900ABE141 /* ArcStatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArcStatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABA26391C35D19900ABE141 /* ArcStatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcStatTests.swift; sourceTree = "<group>"; };
+		DABA263B1C35D19900ABE141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DABA26401C35D19900ABE141 /* ArcStatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArcStatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABA26441C35D19900ABE141 /* ArcStatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcStatUITests.swift; sourceTree = "<group>"; };
+		DABA26461C35D19900ABE141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DABA26521C35D1BD00ABE141 /* OpenZFSInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = OpenZFSInterface.framework; path = "/Users/brendon/Library/Developer/Xcode/DerivedData/o3xgui-axvlugsqwsdnxtbgmjysacxfpadc/Build/Products/Debug/OpenZFSInterface.framework"; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DABA26211C35D19900ABE141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABA26531C35D1BD00ABE141 /* OpenZFSInterface.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABA26321C35D19900ABE141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABA263D1C35D19900ABE141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DABA261B1C35D19900ABE141 = {
+			isa = PBXGroup;
+			children = (
+				DABA26521C35D1BD00ABE141 /* OpenZFSInterface.framework */,
+				DABA26261C35D19900ABE141 /* ArcStat */,
+				DABA26381C35D19900ABE141 /* ArcStatTests */,
+				DABA26431C35D19900ABE141 /* ArcStatUITests */,
+				DABA26251C35D19900ABE141 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DABA26251C35D19900ABE141 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DABA26241C35D19900ABE141 /* ArcStat.app */,
+				DABA26351C35D19900ABE141 /* ArcStatTests.xctest */,
+				DABA26401C35D19900ABE141 /* ArcStatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DABA26261C35D19900ABE141 /* ArcStat */ = {
+			isa = PBXGroup;
+			children = (
+				DABA26271C35D19900ABE141 /* AppDelegate.swift */,
+				DABA26291C35D19900ABE141 /* ViewController.swift */,
+				DABA262B1C35D19900ABE141 /* Assets.xcassets */,
+				DABA262D1C35D19900ABE141 /* Main.storyboard */,
+				DABA26301C35D19900ABE141 /* Info.plist */,
+			);
+			path = ArcStat;
+			sourceTree = "<group>";
+		};
+		DABA26381C35D19900ABE141 /* ArcStatTests */ = {
+			isa = PBXGroup;
+			children = (
+				DABA26391C35D19900ABE141 /* ArcStatTests.swift */,
+				DABA263B1C35D19900ABE141 /* Info.plist */,
+			);
+			path = ArcStatTests;
+			sourceTree = "<group>";
+		};
+		DABA26431C35D19900ABE141 /* ArcStatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DABA26441C35D19900ABE141 /* ArcStatUITests.swift */,
+				DABA26461C35D19900ABE141 /* Info.plist */,
+			);
+			path = ArcStatUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DABA26231C35D19900ABE141 /* ArcStat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DABA26491C35D19900ABE141 /* Build configuration list for PBXNativeTarget "ArcStat" */;
+			buildPhases = (
+				DABA26201C35D19900ABE141 /* Sources */,
+				DABA26211C35D19900ABE141 /* Frameworks */,
+				DABA26221C35D19900ABE141 /* Resources */,
+				DABA26551C35D1BD00ABE141 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArcStat;
+			productName = ArcStat;
+			productReference = DABA26241C35D19900ABE141 /* ArcStat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DABA26341C35D19900ABE141 /* ArcStatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DABA264C1C35D19900ABE141 /* Build configuration list for PBXNativeTarget "ArcStatTests" */;
+			buildPhases = (
+				DABA26311C35D19900ABE141 /* Sources */,
+				DABA26321C35D19900ABE141 /* Frameworks */,
+				DABA26331C35D19900ABE141 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DABA26371C35D19900ABE141 /* PBXTargetDependency */,
+			);
+			name = ArcStatTests;
+			productName = ArcStatTests;
+			productReference = DABA26351C35D19900ABE141 /* ArcStatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DABA263F1C35D19900ABE141 /* ArcStatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DABA264F1C35D19900ABE141 /* Build configuration list for PBXNativeTarget "ArcStatUITests" */;
+			buildPhases = (
+				DABA263C1C35D19900ABE141 /* Sources */,
+				DABA263D1C35D19900ABE141 /* Frameworks */,
+				DABA263E1C35D19900ABE141 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DABA26421C35D19900ABE141 /* PBXTargetDependency */,
+			);
+			name = ArcStatUITests;
+			productName = ArcStatUITests;
+			productReference = DABA26401C35D19900ABE141 /* ArcStatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DABA261C1C35D19900ABE141 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = brendon;
+				TargetAttributes = {
+					DABA26231C35D19900ABE141 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					DABA26341C35D19900ABE141 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = DABA26231C35D19900ABE141;
+					};
+					DABA263F1C35D19900ABE141 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = DABA26231C35D19900ABE141;
+					};
+				};
+			};
+			buildConfigurationList = DABA261F1C35D19900ABE141 /* Build configuration list for PBXProject "ArcStat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DABA261B1C35D19900ABE141;
+			productRefGroup = DABA26251C35D19900ABE141 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DABA26231C35D19900ABE141 /* ArcStat */,
+				DABA26341C35D19900ABE141 /* ArcStatTests */,
+				DABA263F1C35D19900ABE141 /* ArcStatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DABA26221C35D19900ABE141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABA262C1C35D19900ABE141 /* Assets.xcassets in Resources */,
+				DABA262F1C35D19900ABE141 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABA26331C35D19900ABE141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABA263E1C35D19900ABE141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DABA26201C35D19900ABE141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABA262A1C35D19900ABE141 /* ViewController.swift in Sources */,
+				DABA26281C35D19900ABE141 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABA26311C35D19900ABE141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABA263A1C35D19900ABE141 /* ArcStatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABA263C1C35D19900ABE141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABA26451C35D19900ABE141 /* ArcStatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DABA26371C35D19900ABE141 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DABA26231C35D19900ABE141 /* ArcStat */;
+			targetProxy = DABA26361C35D19900ABE141 /* PBXContainerItemProxy */;
+		};
+		DABA26421C35D19900ABE141 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DABA26231C35D19900ABE141 /* ArcStat */;
+			targetProxy = DABA26411C35D19900ABE141 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DABA262D1C35D19900ABE141 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DABA262E1C35D19900ABE141 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DABA26471C35D19900ABE141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DABA26481C35D19900ABE141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DABA264A1C35D19900ABE141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ArcStat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.lundman.net.ArcStat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DABA264B1C35D19900ABE141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ArcStat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.lundman.net.ArcStat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DABA264D1C35D19900ABE141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ArcStatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.lundman.net.ArcStatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArcStat.app/Contents/MacOS/ArcStat";
+			};
+			name = Debug;
+		};
+		DABA264E1C35D19900ABE141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ArcStatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.lundman.net.ArcStatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArcStat.app/Contents/MacOS/ArcStat";
+			};
+			name = Release;
+		};
+		DABA26501C35D19900ABE141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ArcStatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.lundman.net.ArcStatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ArcStat;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DABA26511C35D19900ABE141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ArcStatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.lundman.net.ArcStatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ArcStat;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DABA261F1C35D19900ABE141 /* Build configuration list for PBXProject "ArcStat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DABA26471C35D19900ABE141 /* Debug */,
+				DABA26481C35D19900ABE141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DABA26491C35D19900ABE141 /* Build configuration list for PBXNativeTarget "ArcStat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DABA264A1C35D19900ABE141 /* Debug */,
+				DABA264B1C35D19900ABE141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DABA264C1C35D19900ABE141 /* Build configuration list for PBXNativeTarget "ArcStatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DABA264D1C35D19900ABE141 /* Debug */,
+				DABA264E1C35D19900ABE141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DABA264F1C35D19900ABE141 /* Build configuration list for PBXNativeTarget "ArcStatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DABA26501C35D19900ABE141 /* Debug */,
+				DABA26511C35D19900ABE141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DABA261C1C35D19900ABE141 /* Project object */;
+}
