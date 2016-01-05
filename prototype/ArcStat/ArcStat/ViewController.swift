@@ -14,6 +14,7 @@ class ViewController: NSViewController, NSTableViewDataSource,NSTableViewDelegat
     @IBOutlet weak var arcStatsTableScrollView: NSScrollView!
     @IBOutlet weak var arcStatsTable: NSTableView!
     @IBOutlet weak var arcStatArcCMax: NSTextField!
+    @IBOutlet weak var zfsTotalMem: NSTextField!
     @IBOutlet weak var arcStatArcCMin: NSTextField!
     @IBOutlet weak var arcStatArcCurrent: NSTextField!
     @IBOutlet weak var arcStatMetaMax: NSTextField!
@@ -26,6 +27,7 @@ class ViewController: NSViewController, NSTableViewDataSource,NSTableViewDelegat
     var byteFormatter : NSByteCountFormatter = NSByteCountFormatter()
     var refreshTimer : NSTimer = NSTimer()
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -63,6 +65,8 @@ class ViewController: NSViewController, NSTableViewDataSource,NSTableViewDelegat
         arcStatArcCMax.stringValue = byteFormatter.stringFromByteCount((Int64)(O3X.getArcCMax()))
         arcStatArcCMin.stringValue = byteFormatter.stringFromByteCount((Int64)(O3X.getArcCMin()))
         arcStatArcCurrent.stringValue = byteFormatter.stringFromByteCount((Int64)(sample.size))
+        
+        zfsTotalMem.stringValue = byteFormatter.stringFromByteCount((Int64)(O3X.getMemoryInUse()))
         
         diff.calculatePercents()
         diff.date = sample.date
